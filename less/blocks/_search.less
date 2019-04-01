@@ -1,0 +1,121 @@
+.title{
+	background: url(../img/header-bg.jpg) no-repeat center;
+	background-size: cover;
+	height: 760px;
+	position: relative;
+	text-align: center;
+	@media(max-width: 992px){
+		height: 600px;
+		margin-bottom: 70px;
+	}
+	@media(max-width: 712px){
+		height: 356px;
+		margin-bottom: 253px;
+	}
+}
+.title__text{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+	line-height: 1;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #fff;
+	@media(max-width: 992px){
+		font-size: 54px;
+	}
+	@media(max-width: 712px){
+		font-size: 40px;
+		top: 33%;
+	}
+	@media(max-width: 435px){
+		font-size: 28px;
+	}
+}
+.search{
+	background-color: #fff;
+	padding: 60px 39px;
+	max-width: 970px;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	position: absolute;
+	z-index: 1;
+	@media(max-width: 712px){
+		width: 100%;
+		padding: 26px 39px;
+	}
+	form{
+		display: flex;
+		justify-content: space-between;
+		@media(max-width: 712px){
+			flex-direction: column;
+		}
+		@media(max-width: 435px){
+			padding: 0 0;
+		}
+	}
+}
+.input-field,.btn-srch{
+	display: inline-block;
+}
+.input-field{
+	padding-bottom: 15px;
+	width: 182px;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+	margin-right: 15px;
+	@media(max-width: 992px){
+		width: 142px;
+	}
+	@media(max-width: 712px){
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	&:after{
+		content: '';
+		background: url(../img/drop.png) no-repeat;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		top: 6px;
+		right: 0;
+	}
+	input{
+		width: 161px;
+		border: none;
+		outline: none;
+		font-size: 16px;
+		line-height: 24px;
+		color: #454851;
+		@media(max-width: 992px){
+			width: 120px;
+		}
+		@media(max-width: 712px){
+			width: 90%;
+		}
+	}
+}
+.drop-menu{
+	position: absolute;
+	top: 49px;
+	background-color: #e7ffff;
+	@media(max-width: 712px){
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	p{
+		padding: 10px;
+		font-family: 'serif';
+		font-size: 18px;
+		cursor: pointer;
+		transition: .2s ease-in;
+		&:hover{
+			color: #ccc;
+		}
+	}
+}

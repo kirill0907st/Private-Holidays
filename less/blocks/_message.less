@@ -1,0 +1,54 @@
+.message-wrap{
+	margin-top: 100px;
+	background: url(../img/message-bg.jpg) no-repeat;
+	background-size: cover;
+	height: 570px;
+	@media(max-width: 540px){
+		height: auto;
+	}
+}
+.message-block{
+	position: relative;
+	height: 100%;
+}
+.message{
+	position: absolute;
+	right: 55px;
+	bottom: 0;
+	background-color: #fff;
+	padding: 42px 45px 39px;
+	width: 391px;
+	@media(max-width: 540px){
+		position: static;
+		width: 100%;
+	}
+	form{
+		input[ type="text"],input[ type="email"]{
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid #ccc;
+			outline: none;
+			margin-bottom: 25px;
+			padding: 0 0 9px 8px;
+			color: #454851;
+			&:focus{
+				border-bottom: 1px solid #454851;
+			}
+		}
+		input{
+			display: block;
+		}
+	}
+}
+.message__title{
+	font-size: 30px;
+	font-family: "serif";
+	color: rgb(26, 26, 26);
+	font-weight: bold;
+	line-height: 0.9;
+	margin-bottom: 30px;
+	position: relative;
+	@media(max-width: 540px){
+		font-size: 29px;
+	}
+}

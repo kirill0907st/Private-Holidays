@@ -1,0 +1,136 @@
+.holiday-locations{
+	@media(max-width: 720px){
+		flex-direction: column;
+		margin-top: 34px;
+	}
+}
+.location-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@media(max-width: 720px){
+		flex-direction: column;
+	}
+}
+.location{
+	width: 49%;
+	margin-bottom: 15px;
+	background-color: #fff;
+	display: flex;
+	@media(max-width: 992px){
+		padding-top: 35px;
+		flex-direction: column;
+		text-align: center;
+	}
+	@media(max-width: 720px){
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
+.images,.info{
+	width: 50%;
+	@media(max-width: 992px){
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+.images{
+	height: 100%;
+	@media(max-width: 720px){
+		width: 50%;
+	}
+	@media(max-width: 530px){
+		width: 100%;
+	}
+}
+.images__main-img{
+	height: 79%;
+	img{
+		cursor: pointer;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		&:hover{
+			outline: 2px solid cyan;
+			z-index: 8;
+		}
+		@media(max-width: 992px){
+			margin: 0 auto;
+		}
+	}
+}
+.images__min-img{
+	display: flex;
+	height: 21%;
+	div{
+		width: 33.3333333%;
+		img{
+			cursor: pointer;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			&:hover{
+				z-index: 7;
+				outline: 2px solid cyan;
+			}
+		}
+	}
+	@media(max-width: 992px){
+		justify-content: center;
+	}
+}
+
+.info{
+	padding: 25px 15px 15px 15px;
+	@media(max-width: 992px){
+		padding-bottom: 10px;
+	}
+	@media(max-width: 530px){
+		width: 100%;
+	}
+}
+.info__title{
+	font-size: 30px;
+	font-family: "serif";
+	color: rgb(23, 29, 28);
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 20px;
+	@media(max-width: 1085px){
+		font-size: 27px;
+	}
+}
+.info__text{
+	font-size: 16px;
+	color: rgb(69, 72, 81);
+	line-height: 1.375;
+	word-break: break-all;
+	@media(max-width: 1085px){
+		font-size: 15px;
+	}
+}
+.info__location{
+	display: flex;
+	margin: 29px 0 35px 0;
+	@media(max-width: 992px){
+		justify-content: center;
+	}
+	.bed img, .bath img{
+		margin-right: 10px;
+	}
+	span{
+		font-size: 16px;
+		color: rgb(69, 72, 81);
+		line-height: 1;
+	}
+}
+.info__location>div{
+	display: flex;
+	margin-right: 20px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.info__location>div>div{
+	position: relative;
+}

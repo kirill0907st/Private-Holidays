@@ -1,0 +1,22 @@
+.radian(@radian){
+	border-radius: @radian;
+}
+.radian-direct(@tl:0,@tr:0,@br:0,@bl:0){
+	border-top-left-radius: @tl;
+	border-top-right-radius: @tr;
+	border-bottom-right-radius: @br;
+	border-bottom-left-radius: @bl;
+}
+.border(@width:1px,@style:solid,@color:#000){
+	border-width: @width;
+	border-style: @style;
+	border-color: @color;
+}
+.border-direct(@top:0,@right:0,@bottom:0,@left:0,@style:solid,@color:#000){
+	border-top: @top;
+	border-right: @right;
+	border-bottom: @bottom;
+	border-left: @left;
+	border-style: @style;
+	border-color: @color;
+}
